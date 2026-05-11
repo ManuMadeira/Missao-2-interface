@@ -35,7 +35,7 @@ class _OrderListPageState extends State<OrderListPage> {
           for (int index = 0; index < mockOrders.length; index++)
             Card(
               key: ValueKey(mockOrders[index].id), // Key obrigatória para o Drag & Drop
-              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
               child: ListTile(
                 title: Text('Pedido #${mockOrders[index].id}'),
                 onTap: () {
